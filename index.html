@@ -312,13 +312,15 @@
             // tampilkan tombol kirim, hilangkan tombol loading
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
+
             // tampilkan alert
             myAlert.classList.toggle('d-none');
-             // JavaScript untuk menutup alert setelah 4 detik
-            $(document).ready(function(){
-              setTimeout(function(){
-                $(".my-alert").alert('close');}, 4000);
-            });
+
+            // JavaScript untuk menutup alert setelah 3 detik
+            setTimeout(function(){
+              myAlert.classList.add('d-none'); // Menyembunyikan alert kembali
+            }, 3000);
+
             // reset form
             form.reset();
             console.log('Success!', response)
