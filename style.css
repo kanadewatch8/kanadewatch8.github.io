@@ -4,15 +4,25 @@
   background-color: #e2edff;
 }
 
-.jumbotron img {
+.jumbotron img{
   width: 200px;
   height: 200px;
 }
 
-#projects {
+#projects, #contact {
   background-color: #e2edff;
 }
 
 section {
   padding-top: 5rem;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+
+#gallery .row > * /* > * apapun yang ada didalam row */ {
+  padding: 5;
+  margin-bottom: 20px;
 }
